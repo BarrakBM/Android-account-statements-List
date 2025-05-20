@@ -1,13 +1,12 @@
 package com.example.list.data
 
-import java.math.BigDecimal
-import java.sql.Date
+import java.time.LocalDate
 
 data class AccountStatement(
     var type: String,
-    var date: String,
+    var date: LocalDate,
     var reference: Int,
     var currency: String,
     var amount: Double,
 
-)
+    )
